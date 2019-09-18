@@ -77,7 +77,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="CHIP,">
 
 
 
@@ -88,17 +88,21 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="背景应该以前是写过一篇关于chip-seq的基础介绍，原来那个博客出问题。后面再把那篇补上吧。CHIP-seq主要就是为了研究DNA与蛋白质间关系的一项技术。通常情况下是找跟转录因子或者组蛋白相互作用的DNA片段。 流程讲解1，数据库准备UCSC （hg19） 12http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/chromFa.tar.">
+<meta name="keywords" content="CHIP">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://kuteng11.ml/2019/09/15/hello-world/index.html">
+<meta property="og:title" content="CHIP-seq学习笔记">
+<meta property="og:url" content="http://kuteng11.ml/2019/09/18/CHIP-seq学习笔记/index.html">
 <meta property="og:site_name" content="酸菜鱼">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="背景应该以前是写过一篇关于chip-seq的基础介绍，原来那个博客出问题。后面再把那篇补上吧。CHIP-seq主要就是为了研究DNA与蛋白质间关系的一项技术。通常情况下是找跟转录因子或者组蛋白相互作用的DNA片段。 流程讲解1，数据库准备UCSC （hg19） 12http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/chromFa.tar.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-12T00:25:08.000Z">
+<meta property="og:image" content="http://kuteng11.ml/CHIP-seq%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/20190918051610278.png">
+<meta property="og:image" content="http://kuteng11.ml/CHIP-seq%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/20190918052147939.png">
+<meta property="og:updated_time" content="2019-09-18T10:03:12.118Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="CHIP-seq学习笔记">
+<meta name="twitter:description" content="背景应该以前是写过一篇关于chip-seq的基础介绍，原来那个博客出问题。后面再把那篇补上吧。CHIP-seq主要就是为了研究DNA与蛋白质间关系的一项技术。通常情况下是找跟转录因子或者组蛋白相互作用的DNA片段。 流程讲解1，数据库准备UCSC （hg19） 12http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/chromFa.tar.">
+<meta name="twitter:image" content="http://kuteng11.ml/CHIP-seq%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/20190918051610278.png">
 
 
 
@@ -128,13 +132,13 @@
 
 
 
-  <link rel="canonical" href="http://kuteng11.ml/2019/09/15/hello-world/">
+  <link rel="canonical" href="http://kuteng11.ml/2019/09/18/CHIP-seq学习笔记/">
 
 
 
 
 
-  <title>Hello World | 酸菜鱼</title>
+  <title>CHIP-seq学习笔记 | 酸菜鱼</title>
   
 
 
@@ -271,7 +275,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://kuteng11.ml/2019/09/15/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://kuteng11.ml/2019/09/18/CHIP-seq学习笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="简单">
@@ -288,7 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">CHIP-seq学习笔记</h1>
         
 
         <div class="post-meta">
@@ -300,8 +304,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-15T17:34:49+08:00">
-                2019-09-15
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-09-18T16:56:22+08:00">
+                2019-09-18
               </time>
             
 
@@ -338,19 +342,25 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+        <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>应该以前是写过一篇关于chip-seq的基础介绍，原来那个博客出问题。后面再把那篇补上吧。<br>CHIP-seq主要就是为了研究DNA与蛋白质间关系的一项技术。通常情况下是找跟转录因子或者组蛋白相互作用的DNA片段。</p>
+<h1 id="流程讲解"><a href="#流程讲解" class="headerlink" title="流程讲解"></a>流程讲解</h1><p>1，数据库准备UCSC （hg19）</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http://hgdownload.soe.ucsc.edu/goldenPath/hg19/bigZips/chromFa.tar.gz</span><br><span class="line">$ bowtie2-build hg19.fa hg19</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>   fastq数据准备</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">http://www.ebi.ac.uk/</span><br><span class="line">&quot;chip-seq FoxA1&quot; --&gt; Nucleotide sequences (74)</span><br><span class="line">http://www.ncbi.nlm.nih.gov/</span><br><span class="line">SRA --&gt; &quot;chip-seq FoxA1&quot;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>2，质控</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ fastqc ERR499.read1.fq -t 2 -o qcOutdir</span><br><span class="line">ERR499.read1.fq 测序文件</span><br><span class="line">-t 线程</span><br><span class="line">-o 输出目录</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>3， 过滤</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">过滤接头。对含接头的reads去除接头序列。</span><br><span class="line">一条reads上N（未能确定出具体的碱基类型）的比例大于5%，则过滤掉该reads。</span><br><span class="line">过滤低质量reads，过滤掉Q20&lt;70% reads。</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>过滤统计<br><img src="/CHIP-seq%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/20190918051610278.png" alt><br>4， 比对</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">bowtie2比对</span><br><span class="line">$ bowtie2 -p 15 -x /home/zhiming/software/rna/rnaSeqSoftware/hg19/hg19 ERR990.clean1.fq -S ERR990.sam</span><br><span class="line">- p 线程</span><br><span class="line">- x 参考索引文件 bowtie2-build hg19.fa hg19</span><br><span class="line">- ERR990.clean1.fq 过滤后数据</span><br><span class="line">- s输出比对结果</span><br></pre></td></tr></table></figure>
+
+<p><img src="/CHIP-seq%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/20190918052147939.png" alt><br>取unique进行peak finding<br>peak注释，找到最近的基因。继续进行基因的生物信息学分析。<br>motif分析</p>
+<h1 id="命令行操作"><a href="#命令行操作" class="headerlink" title="命令行操作"></a>命令行操作</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">[QC] software: FastQC(fastqc)+Cutadapt(cutadapt)+FASTX-Toolkit(fastq_quality_filter)</span><br><span class="line">#[]内为我们要执行该操作的子项目，如该行代码子项目为质控操作。</span><br><span class="line">#software：后面跟执行该自行木需要用到的软件</span><br><span class="line">#（）内为要用到的该软件的命令</span><br><span class="line">mkdir qcOutdir</span><br><span class="line">fastqc ERR990.R1.fq -t 2 -o qcOutdir</span><br><span class="line">#sz可以对质控后文件下载</span><br><span class="line">cutadapt -a AGATCGGAAGAGCACACGTCTGAACTCCAGTC ERR990.R1.fq -m 30 --output=ERR990.cutAd1.fq</span><br><span class="line">#过滤 -m设定reads最少长度</span><br><span class="line">./removeN ERR990.cutAd1.fq ERR990.unknowNul1.fq</span><br><span class="line">fastq_quality_filter -q 20 -p 70 -i ERR990.unknowNul1.fq -o ERR990.clean1.fq  #-Q 33版本不同报错</span><br><span class="line">fastqc ERR990.clean1.fq -t 2 -o qcOutdir</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[mapping] software: bowtie2(bowtie2+bowtie2-build)+samtools(samtools) </span><br><span class="line">bowtie2-build hg19.fa hg19</span><br><span class="line">#http://bowtie-bio.sourceforge.net/bowtie2/index.shtml</span><br><span class="line">bowtie2 -p 15 -x /home/yun/bio/reference/hg19/hg19 ERR990.clean1.fq -S ERR990.sam</span><br><span class="line">grep -v &quot;XS:i:&quot; ERR990.sam |samtools view -bS - &gt;ERR990.unique.bam</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[call peaks] software: MACS(macs14)</span><br><span class="line">#http://liulab.dfci.harvard.edu/MACS/</span><br><span class="line">#MACS install: python setup.py install</span><br><span class="line">macs14 -t ERR990.unique.bam -c ERR997.unique.bam -f BAM -g hs -n sample -p 1e-5 -B</span><br><span class="line">#macs14 -t ERR990.unique.bam -f BAM -g hs -n sample -p 1e-5 -B</span><br><span class="line">Rscript sample_model.r</span><br><span class="line">Rscript hist.R</span><br><span class="line">Rscript peakView.R</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">[homer] software: Homer(findMotifsGenome.pl|annotatePeaks.pl)</span><br><span class="line">#http://homer.salk.edu/homer/introduction/install.html</span><br><span class="line">#perl configureHomer.pl -list</span><br><span class="line">#perl configureHomer.pl -install homer</span><br><span class="line">#perl configureHomer.pl -install hg19</span><br><span class="line">#Ghostscript + Weblogo + blat + samtools </span><br><span class="line"></span><br><span class="line">awk &apos;&#123;print $4&quot;\t&quot;$1&quot;\t&quot;$2&quot;\t&quot;$3&quot;\t+&quot;&#125;&apos; sample_peaks.bed &gt;sample_homer.bed</span><br><span class="line">findMotifsGenome.pl sample_homer.bed hg19 motifDir -len 8,10,12</span><br><span class="line">annotatePeaks.pl sample_homer.bed hg19 1&gt;peakAnn.xls 2&gt;annLog.txt    #-go GODir</span><br><span class="line">#annotatePeaks.pl sample_homer.bed hg19 -go GODir 1&gt;peakAnn.xls 2&gt;annLog.txt</span><br><span class="line">awk -F &quot;\t&quot; &apos;NR&gt;1&#123; split($8, arr, &quot;(&quot;); sub(&quot; &quot;,&quot;&quot;,arr[1]); print arr[1]&#125;&apos; peakAnn.xls |sort |uniq -c |awk &apos;&#123;print $2&quot;\t&quot;$1&#125;&apos; &gt;peakRegionStat.xls</span><br><span class="line">Rscript pie.R</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -366,6 +376,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/CHIP/" rel="tag">?CHIP</a>
+          
+        </div>
+      
 
       
       
@@ -375,15 +391,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/09/18/关于TCGAmRNA数据下载/" rel="next" title="关于TCGAmRNA数据下载">
+                <i class="fa fa-chevron-left"></i> 关于TCGAmRNA数据下载
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/09/17/20190917220814/" rel="prev" title="20190917220814">
-                20190917220814 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -561,7 +577,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#背景"><span class="nav-number">1.</span> <span class="nav-text">背景</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#流程讲解"><span class="nav-number">2.</span> <span class="nav-text">流程讲解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#命令行操作"><span class="nav-number">3.</span> <span class="nav-text">命令行操作</span></a></li></ol></div>
             
 
           </div>
